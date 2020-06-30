@@ -1,0 +1,38 @@
+{
+  "name": "ejsexton82/ece-tools-for-ce",
+  "description": "Provides configuration to use ece-tools with Magento 2 Community Edition",
+  "type": "magento2-component",
+  "version": "1.0.0",
+  "license": "OSL-3.0",
+  "repositories": {
+    "repo.magento.com": {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  },
+  "authors": [
+    {
+      "name": "E.J. Sexton",
+      "email": "ejsexton82@gmail.com"
+    }
+  ],
+  "require": {
+    "magento/ece-tools": "2002.1.*|2002.0.*"
+  },
+  "extra": {
+    "map": [
+      [
+        "dist/.magento.app.yaml",
+        ".magento.app.yaml"
+      ],
+      [
+        "dist/.magento/routes.yaml",
+        ".magento/routes.yaml"
+      ],
+      [
+        "dist/.magento/services.yaml",
+        ".magento/services.yaml"
+      ]
+    ]
+  }
+}
